@@ -15,9 +15,9 @@ app.use(express.static('public'));
 
 
 //make way for some custom css, js and images
-// app.use('/css', express.static(__dirname + '/public/assets/css'));
-// app.use('/js', express.static(__dirname + '/public/assets/js'));
-app.use('/images', express.static(__dirname + '/public/images'));
+app.use('/css', express.static(__dirname + '/public/assets/css'));
+app.use('/js', express.static(__dirname + '/public/assets/js'));
+app.use('/images', express.static(__dirname + '/public/assets/images'));
 
 app.listen(app.get('PORT'), () =>
     console.log(`Server running on port ${app.get('PORT')}`),
